@@ -1,0 +1,116 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font: 1.6rem Helvetica;
+  height: 100vh;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+.header {
+  grid-area: header;
+  background-color: #203040;
+  color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+.nav-bar > li {
+  float: left;
+}
+
+#image {
+  text-align: justify;
+  margin: auto;
+}
+
+img {
+  float: right;
+
+  margin-top: -3rem;
+  vertical-align: middle;
+}
+
+.nav-bar > li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #203040;
+  color: red;
+}
+
+#bottom {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+#bottom > li {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  color: white;
+}
+
+#bottom > li:last-child {
+  padding-left: 10%;
+}
+
+#bottom > li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  padding-top: 30px;
+  width: 100%;
+}
+.carousel-slide .carousel-inner .d-block {
+  width: 100%;
+  grid-template-columns: 1fr;
+}
